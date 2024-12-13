@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>domenivalimine.com</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="title">domenivalimine.com</h1>
+    <p class="default-domain">domenivaalimine.com</p>
+  </header>
+
+  <div class="progress-bar">
+    <div class="step completed">Avaleht</div>
+    <div class="step">Doomeni valimine</div>
+    <div class="step">Sisesta andmed</div>
+    <div class="step">Tellimuse kinnitamine</div>
+  </div>
+
+  <div class="form-container">
+    <!-- Step 0: Homepage -->
+    <div class="step-content active" id="step-0">
+      <div class="welcome-message">
+        <h2>Tere tulemast!</h2>
+        <p>Alusta oma domeeni valimise protsessi siit.</p>
+      </div>
+      <button class="btn-next">Alusta</button>
+    </div>
+
+    <!-- Step 1: Doomeni valimine -->
+    <div class="step-content" id="step-1">
+      <div class="form-group">
+        <label for="valik">Vali doomen:</label>
+        <input type="text" id="valik" placeholder="Tekst" />
+      </div>
+      <div class="form-group">
+        <label for="valik2">Vali doomen:</label>
+        <input type="text" id="valik2" placeholder="Tekst" />
+      </div>
+      <div class="button-group">
+        <button class="btn-back">Tagasi</button>
+        <button class="btn-next">Jätka</button>
+      </div>
+    </div>
+
+    <!-- Step 2: Sisesta andmed -->
+    <div class="step-content" id="step-2">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Email" />
+      </div>
+      <div class="form-group">
+        <label for="branch">Doomeni asukoht:</label>
+        <select id="branch">
+          <option value="Tallinn">Tallinn</option>
+          <option value="Tartu">Tartu</option>
+        </select>
+      </div>
+      <div class="button-group">
+        <button class="btn-back">Tagasi</button>
+        <button class="btn-next">Jätka</button>
+      </div>
+    </div>
+
+    <!-- Step 3: Tellimuse kinnitamine -->
+    <div class="step-content" id="step-3">
+      <div class="summary">
+        <h3>Tellimus</h3>
+        <p>Hind: XXX</p>
+        <p>Doomenid: XXX</p>
+        <p>Hind kokku: XXX</p>
+      </div>
+      <div class="button-group">
+        <button class="btn-back">Tagasi</button>
+        <button class="btn-final">Lõpeta ja kinnita</button>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
