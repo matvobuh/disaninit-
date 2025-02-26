@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Üheleheline veebileht</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 0;
+        }
+        .text {
+            width: 50%;
+        }
+        .image {
+            width: 50%;
+            background-image: url('background.jpg');
+            background-size: cover;
+            height: 300px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Minu Üheleheline Veebileht</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Avaleht</a></li>
+                <li><a href="#">Teenused</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="content">
+            <div class="text">
+                <h2>Tere tulemast!</h2>
+                <p>See on lihtne üheleheline veebileht, mis kasutab HTML-i ja CSS-i.</p>
+                <p><strong>Siin on mõned huvitavad faktid:</strong></p>
+                <ul>
+                    <li>HTML on veebilehtede aluseks.</li>
+                    <li>CSS aitab luua ilusa kujunduse.</li>
+                    <li>Veebilehed võivad olla staatilised või dünaamilised.</li>
+                </ul>
+            </div>
+            <div class="image"></div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Minu Veebileht. Kõik õigused kaitstud.</p>
+    </footer>
+</body>
+</html>
