@@ -5,119 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uudiskiri</title>
     <style>
-        body {
-            font-family: Georgia;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border: 1px solid #ccc;
-        }
-        .header {
-            background-color: #1f2a35;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .content {
-            display: flex;
-            justify-content: space-between;
-            padding: 20px 0;
-            border-bottom: 2px solid #ccc;
-        }
-        .content div {
-            width: 48%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            background-color: #ffffff;
-        }
-        .sub-content {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 0;
-            border-bottom: 2px solid #ccc;
-        }
-        .sub-content div {
-            width: 48%;
-            padding: 10px;
-        }
-        .highlight {
-            background-color: #e8f0f8;
-            padding: 20px;
-            text-align: center;
-            margin-top: 20px;
-            border: 1px solid #ccc;
-        }
-        .highlight strong {
-            font-size: 18px;
-        }
-        .button {
+        /* Shadow effect only for CUPIDITATE button */
+        .cupiditate-btn {
             display: inline-block;
             background: #007bff;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 25px;
             text-decoration: none;
-            margin-top: 10px;
-            border-radius: 4px;
+            border-radius: 2px;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+            transition: box-shadow 0.3s ease;
         }
-        .footer {
-            font-size: 12px;
-            text-align: center;
-            color: gray;
-            padding: 10px;
-            border-top: 1px solid #ccc;
-            margin-top: 20px;
-            font-style: Georgia ;
-        }
-        .footer a {
-            color: gray;
-            text-decoration: none;
+
+        .cupiditate-btn:hover {
+            box-shadow: 0 6px 12px rgba(0, 123, 255, 0.4); /* Darker and larger shadow on hover */
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <div class="header">Uudiskiri</div>
-        
-        <div class="content">
-            <div>
-                <strong>Id est laborum</strong>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium...</p>
-            </div>
-            <div>
-                <strong>Occaecati cupiditate</strong>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium...</p>
-            </div>
-        </div>
-        
-        <div class="sub-content">
-            <div>
-                <strong>Quas molestias exce</strong>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus...</p>
-            </div>
-            <div>
-                <strong>Accusamus et iusto</strong>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus...</p>
-            </div>
-        </div>
-        
-        <div class="highlight">
-            <strong>QUOS DOLORES ET QUAS</strong>
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
-            <a href="#" class="button">CUPIDITATE</a>
-        </div>
-        
-        <div class="footer">
-            At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Qui Blanditiis Praesentium... <a href="#">Unsubscribe</a>
-        </div>
-    </div>
+<body style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4;">
+    <table align="center" width="800" cellspacing="0" cellpadding="0" border="0" style="background-color: white; border: 1px solid #ccc; margin-top: 30px;">
+        <tr>
+            <td style="background-color: #1f2a35; color: white; text-align: center; padding: 30px; font-size: 28px; font-weight: bold; letter-spacing: 1px; border-bottom: 4px solid #ccc;">
+                Uudiskiri
+            </td>
+        </tr>
+        <!-- Main Content Section -->
+        <tr>
+            <td style="padding: 0px; border-bottom: 2px solid #ccc;">
+                <table width="100%" cellspacing="0" cellpadding="10" border="0">
+                    <tr>
+                        <td width="50%" style="border-right: 2px solid #ccc; font-weight: bold; font-size: 18px; padding: 15px;">Id est laborum</td>
+                        <td width="50%" style="font-weight: bold; font-size: 18px; padding: 15px;">Occaecati cupiditate</td>
+                    </tr>
+                    <tr>
+                        <td style="border-right: 2px solid #ccc; line-height: 1.6; padding: 15px;">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi...</td>
+                        <td style="line-height: 1.6; padding: 15px;">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi...</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- Additional Section -->
+        <tr>
+            <td style="padding: 20px; border-bottom: 2px solid #ccc;">
+                <table width="100%" cellspacing="0" cellpadding="10" border="0">
+                    <tr>
+                        <td width="50%" style="border-right: 2px solid #ccc; font-weight: bold; font-size: 16px; padding: 15px;">Quas molestias exce</td>
+                        <td width="50%" style="font-weight: bold; font-size: 16px; padding: 15px;">Accusamus et iusto</td>
+                    </tr>
+                    <tr>
+                        <td style="border-right: 2px solid #ccc; line-height: 1.6; padding: 15px;">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</td>
+                        <td style="line-height: 1.6; padding: 15px;">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- Call to Action Section -->
+        <tr>
+            <td style="background-color: #e8f0f8; padding: 30px; text-align: center; border: 2px solid #ffffff;">
+                <strong style="font-size: 22px; display: block; margin-bottom: 10px;">QUOS DOLORES ET QUAS</strong>
+                <p style="font-size: 16px; margin-bottom: 20px;">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+                <!-- CUPIDITATE button with shadow effect -->
+                <a href="#" class="cupiditate-btn">CUPIDITATE</a>
+            </td>
+        </tr>
+
+        <!-- Footer Section -->
+        <tr>
+            <td style="font-size: 12px; text-align: center; color: gray; padding: 15px; border-top: 2px solid #ccc; font-style: Helvetica; background-color: #ffffff;">
+                At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Qui Blanditiis Praesentium... <a href="#" style="color: gray; text-decoration: none; font-weight: bold;">Unsubscribe</a>
+            </td>
+        </tr>
+    </table>
+
 </body>
 </html>
